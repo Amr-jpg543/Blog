@@ -19,7 +19,7 @@ class PostSeeder extends Seeder
         // توليد 1000 بوست بشكل جماعي
         $posts = [];
 
-        for ($i = 0; $i < 10000; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             $posts[] = [
                 'user_id' => $user->id,
                 'title' => $faker->sentence(6),

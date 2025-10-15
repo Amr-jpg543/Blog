@@ -33,8 +33,13 @@
 
             </tbody>
         @endforeach
-        <div class="mt-4">
-            {{ $posts->links('pagination::bootstrap-5') }}
-        </div>
+
+
     </table>
+@endsection
+
+@section('pagination')
+    <div class="mt-4">
+        {{ $posts->links('pagination::bootstrap-5') }}
+    </div>
 @endsection
